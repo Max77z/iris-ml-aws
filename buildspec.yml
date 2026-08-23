@@ -11,7 +11,7 @@ phases:
  
       - ECR_URI=$AWS_ACCOUNT_ID.dkr.ecr.$AWS_DEFAULT_REGION.amazonaws.com
  
-      -# aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $ECR_URI
+      # aws ecr get-login-password --region $AWS_DEFAULT_REGION | docker login --username AWS --password-stdin $ECR_URI
       - aws ecr get-login-password --region ap-south-1 | docker login --username AWS --password-stdin 618246141405.dkr.ecr.ap-south-1.amazonaws.com 
       - REPOSITORY_URI=$ECR_URI/mlops-ecr
       - 
