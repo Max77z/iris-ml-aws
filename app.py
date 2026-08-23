@@ -27,7 +27,7 @@ def root():
 
     return {
 
-        "message": "Iris ML API is running"
+        "message": "Iris ML API  v2 is running"
 
     }
  
